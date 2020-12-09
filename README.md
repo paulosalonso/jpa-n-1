@@ -1,12 +1,25 @@
 # JPA N+1
 
 Projeto criado com SpringBoot. Usa os starters do Spring Web e Spring Data JPA.
-Como banco de dados é utilizado o H2, em memória.
-Ao inicializar a aplicação, é criada a tabela category, a qual é populada com 5 registros.
 
 ## Objetivo
 
 Demonstrar o que é problema do N+1 e apresentar possíveis soluções.
+
+## Inicialização
+
+Pela IDE de sua preferência (Eclipse, STS, IntelliJ, etc)
+
+Via maven
+> mvn spring-boot:run
+
+Via Java
+> mvn clean package \
+> java -jar target/jpqlleftjoin-0.0.1-SNAPSHOT.jar 
+
+## Banco de dados
+
+A aplicação utiliza o banco H2 em memória. Ao inicializar é criada a tabela category, a qual é populada com 5 registros. Por ser um banco em memória, ao encerrar a aplicação os dados são perdidos.
 
 ## Vídeo
 
